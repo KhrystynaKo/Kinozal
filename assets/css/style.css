@@ -80,11 +80,47 @@ a:hover, a:focus {
 }
 
 h1 {
+  margin: -0.5rem 0 2.8rem;
+  font-size: 3rem;
+  position: relative;
   font-family: "PT Serif", serif;
 }
 
+h1::after {
+  position: absolute;
+  content: "";
+  top: 40px;
+  right: -1px;
+  width: calc(100% - 365px);
+  height: 3px;
+  background-color: rgba(223, 138, 19, 0.5);
+}
+
 h2 {
+  margin: 3.75rem 2.8rem 2.8rem;
+  position: relative;
   font-family: "PT Serif", serif;
+  font-size: 2.5rem;
+}
+
+h2::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -45px;
+  width: 30px;
+  height: 3px;
+  background-color: rgba(223, 138, 19, 0.5);
+}
+
+h2::after {
+  position: absolute;
+  content: "";
+  top: 35px;
+  right: -45px;
+  width: calc(100% - 250px);
+  height: 3px;
+  background-color: rgba(223, 138, 19, 0.5);
 }
 
 .header {
@@ -111,6 +147,10 @@ h2 {
   letter-spacing: 0.2em;
   color: #ffffff;
   font-size: 1.15rem;
+}
+
+.top-week {
+  position: relative;
 }
 
 .new-films-item,

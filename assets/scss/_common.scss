@@ -19,12 +19,45 @@ a {
 }
 
 h1 {
+  margin:-0.5rem 0 2.8rem;
+  font-size: 3rem;
+  position: relative;
   font-family: $font-header;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 40px;
+    right: -1px;
+    width: calc(100% - 365px);
+    height: 3px;
+    background-color: rgba($color-accent, 0.5%); 
+  }
 }
 
 h2 {
+  margin: 3.75rem 2.8rem 2.8rem;
+  position: relative;
   font-family: $font-header;
+  font-size: 2.5rem;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: -45px;
+    width: 30px;
+    height: 3px;
+    background-color: rgba($color-accent, 0.5%);
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 35px;
+    right: -45px;
+    width: calc(100% - 250px);
+    height: 3px;
+    background-color: rgba($color-accent, 0.5%); 
+  }
+
 }
-
-
-
