@@ -113,27 +113,30 @@ h2 {
   font-size: 1.15rem;
 }
 
-.new-films .row {
-  margin-left: -7.5px;
-  margin-right: -7.5px;
-}
-
-.new-films-item {
+.new-films-item,
+.top-week-item {
   padding-right: 7.5px;
   padding-left: 7.5px;
   margin-bottom: 15px;
 }
 
-.new-films-item .thumbnail {
+.new-films-item .thumbnail,
+.top-week-item .thumbnail {
   margin-bottom: 0;
 }
 
-.new-films-item__title {
+.new-films-item__title,
+.top-week-item__title {
   display: block;
   overflow: hidden;
   white-space: nowrap;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
+}
+
+.row {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
 }
 
 .left-sidebar {
