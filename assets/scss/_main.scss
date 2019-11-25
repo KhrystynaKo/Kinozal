@@ -37,8 +37,10 @@
 }
 
 .row {
+  @include sm-min {
   margin-left: -$gap / 2;
   margin-right: -$gap / 2;
+  }
 }
 
 .thumbnail {
@@ -63,6 +65,23 @@
     font-size: 0.9rem;
     border-radius: 4px;
     color: $color-light;
-    background-color: $color-accent;
+    background-color: lighten($color-accent, 15%);
+    transition: background-color 0.2s linear;
+  }
+  &:hover,
+  &:focus {
+
+      .thumbnail {
+        background-color: $color-accent;
+      }
+
+      a {
+        color: $color-accent;
+      }
+
+      .news-item-btn {
+        background-color: $color-accent;
+        color: $color-light;
+      }
   }
 }
