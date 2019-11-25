@@ -46,6 +46,8 @@
       width: 75px;
       margin: 0 10px 10px 0;
 
+      transition: background-color 0.2s linear;
+
       img {
         width: 100%;
       }
@@ -63,6 +65,16 @@
       margin-bottom: 10px;
 
       @include block-shortener(1rem, 1.5, 50px, 2);
+    }
+
+    &:hover,
+    &:focus {
+      .site-news-item__image {
+      background-color: $color-accent;
+      }
+      .site-news-item__title > a {
+        color: $color-accent;
+      }
     }
   }
 }
