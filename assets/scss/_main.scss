@@ -33,6 +33,11 @@
         color: $color-light;
       }
     }
+
+    @include sm {
+      padding-right: $gap;
+      padding-left: $gap;
+    }
   }
 }
 
@@ -50,6 +55,11 @@
 
 .news-item {
   margin-bottom: 3.1rem;
+
+  &:last-of-type {
+    margin-bottom: 5.5rem;
+  }
+
   &__title {
     @include xs {
       font-size: 1.25rem;
@@ -60,6 +70,11 @@
     margin-left: -$gap;
     margin-right: -$gap;
   }
+
+  img {
+    width: 100%;
+  }
+
 
   &-description {
     text-align: justify;

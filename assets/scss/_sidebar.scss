@@ -1,11 +1,6 @@
 .left-sidebar {
   margin-bottom: $gap * 4;
 
-  .panel:last-of-type {
-    margin: 0;
-  }
-}
-
 .vertical-slider {
   overflow: hidden;
 
@@ -105,31 +100,32 @@
     border-left: none;
     background-color: transparent;
 
-    a {
-      display: block;
-
-      padding: 10px 40px 10px $gap;
-    }
-
-    &:first-child {
-      border-top: none;
-      border-radius: 0;
-    }
-
-    &:last-child {
-      border-bottom: none;
-      border-radius: 0;
-    }
-
-    &:hover {
-      background-color: $color-accent;
-
       a {
-        color: $color-light;
+        display: block;
+
+        padding: 10px 40px 10px $gap;
       }
 
-      .badge {
-        background-color: $color-dark;
+      &:first-child {
+        border-top: none;
+        border-radius: 0;
+      }
+
+      &:last-child {
+        border-bottom: none;
+        border-radius: 0;
+      }
+
+      &:hover {
+        background-color: $color-accent;
+
+        a {
+          color: $color-light;
+        }
+
+        .badge {
+          background-color: $color-dark;
+        }
       }
     }
   }

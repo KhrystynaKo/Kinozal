@@ -34,6 +34,11 @@ h1 {
     height: 3px;
     background-color: rgba($color-accent, 0.5%); 
   }
+
+  @include md {
+    margin: 2.8rem 0 2.8rem;
+  }
+
   @include xs {
     font-size: 2rem;
 
