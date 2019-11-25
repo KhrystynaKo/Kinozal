@@ -34,6 +34,14 @@ h1 {
     height: 3px;
     background-color: rgba($color-accent, 0.5%); 
   }
+  @include xs {
+    font-size: 2rem;
+
+    &::after {
+      top: 30px;
+      width: calc(100% - 240px);
+    }
+  }
 }
 
 h2 {
@@ -60,5 +68,13 @@ h2 {
     height: 3px;
     background-color: rgba($color-accent, 0.5%); 
   }
+  @include xs {
+    font-size: 1.7rem;
+      &::after {
+      top: 25px;
+      width: calc(100% - 155px);
+      }
+    }
+  }
 
-}
+

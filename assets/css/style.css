@@ -200,16 +200,49 @@ h2::after {
   color: #ffffff;
 }
 
-.row {
-  margin-left: -7.5px;
-  margin-right: -7.5px;
-}
-
 .thumbnail {
   margin-bottom: 0;
   -webkit-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
+}
+
+.news-item {
+  margin-bottom: 3.1rem;
+}
+
+.news-item > .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.news-item-description {
+  text-align: justify;
+}
+
+.news-item-btn {
+  float: right;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #f0ad4f;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.news-item:hover .thumbnail, .news-item:focus .thumbnail {
+  background-color: #df8a13;
+}
+
+.news-item:hover a, .news-item:focus a {
+  color: #df8a13;
+}
+
+.news-item:hover .news-item-btn, .news-item:focus .news-item-btn {
+  background-color: #df8a13;
+  color: #ffffff;
 }
 
 .left-sidebar {
@@ -356,6 +389,10 @@ h2::after {
   .navbar-right > li {
     margin: 5px 0 5px 5px;
   }
+  .row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
 }
 
 @media (max-width: 767.8px) {
@@ -371,8 +408,25 @@ h2::after {
 }
 
 @media (max-width: 575.8px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h1::after {
+    top: 30px;
+    width: calc(100% - 240px);
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h2::after {
+    top: 25px;
+    width: calc(100% - 155px);
+  }
   .header-logo__title {
     letter-spacing: 0.2em;
     font-size: 2.5rem;
+  }
+  .news-item__title {
+    font-size: 1.25rem;
   }
 }

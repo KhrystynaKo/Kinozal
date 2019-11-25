@@ -50,9 +50,15 @@
 
 .news-item {
   margin-bottom: 3.1rem;
+  &__title {
+    @include xs {
+      font-size: 1.25rem;
+      }
+    }
 
-  & > row {
-    margin: 0 -$gap;
+  & > .row {
+    margin-left: -$gap;
+    margin-right: -$gap;
   }
 
   &-description {
