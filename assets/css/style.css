@@ -276,7 +276,7 @@ h2::after {
 }
 
 .film-description {
-  margin-bottom: 75px;
+  margin-bottom: 60px;
 }
 
 .film-title:after {
@@ -514,5 +514,12 @@ h2::after {
   }
   .news-item__title {
     font-size: 1.25rem;
+  }
+  .film-video-title:after {
+    top: 30px;
+    width: calc(100% - 290px);
+  }
+  .film-title:after {
+    width: calc(100% - 200px);
   }
 }

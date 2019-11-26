@@ -1,31 +1,41 @@
 .film-video {
-    &-title {
-      &:after {
-        width: calc(100% - 435px);
-      }
-    }
-  
-    &-item {
-      border-radius: 10px;
-    }
-  
-    &-info {
-      margin: 0;
-      font-size: 1.2rem;
-  
-      & > span {
-        font-size: 0.95rem;
-        margin: 0 1.4rem 0 0.3rem;
-      }
-    }
-  }
-  
-  .film-description {
-    margin-bottom: $gap * 5;
-  
-  }
-  .film-title {
+  &-title {
     &:after {
-      width: calc(100% - 310px);
+      width: calc(100% - 435px);
+
+      @include xs {
+        top: 30px;
+        width: calc(100% - 290px);
+        }
+    }
+    
+  }
+
+  &-item {
+    border-radius: 10px;
+  }
+
+  &-info {
+    margin: 0;
+    font-size: 1.2rem;
+
+    & > span {
+      font-size: 0.95rem;
+      margin: 0 1.4rem 0 0.3rem;
     }
   }
+}
+
+.film-description {
+  margin-bottom: $gap * 4;
+
+}
+.film-title {
+  &:after {
+    width: calc(100% - 310px);
+
+    @include xs {
+      width: calc(100% - 200px);
+    }
+  }
+}
