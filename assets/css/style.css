@@ -283,6 +283,28 @@ h2::after {
   width: calc(100% - 310px);
 }
 
+.comments {
+  margin-bottom: 120px;
+}
+
+.comments-title:after {
+  width: calc(100% - 410px);
+}
+
+.comments-btn {
+  float: right;
+  color: #ffffff;
+  border: none;
+  background-color: #f0ad4f;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.comments-btn:hover, .comments-btn:focus {
+  background-color: #df8a13;
+}
+
 .left-sidebar {
   margin-bottom: 60px;
 }
@@ -521,5 +543,8 @@ h2::after {
   }
   .film-title:after {
     width: calc(100% - 200px);
+  }
+  .comments-title:after {
+    width: calc(100% - 265px);
   }
 }
