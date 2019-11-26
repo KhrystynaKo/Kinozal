@@ -257,6 +257,32 @@ h2::after {
   color: #ffffff;
 }
 
+.film-video-title:after {
+  width: calc(100% - 435px);
+}
+
+.film-video-item {
+  border-radius: 10px;
+}
+
+.film-video-info {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.film-video-info > span {
+  font-size: 0.95rem;
+  margin: 0 1.4rem 0 0.3rem;
+}
+
+.film-description {
+  margin-bottom: 75px;
+}
+
+.film-title:after {
+  width: calc(100% - 310px);
+}
+
 .left-sidebar {
   margin-bottom: 60px;
 }
@@ -378,6 +404,38 @@ h2::after {
 
 .left-sidebar .top-films-item:hover .badge {
   background-color: #232323;
+}
+
+.footer {
+  padding-top: 45px;
+  padding-bottom: 1.25rem;
+  color: #ffffff;
+  background-color: #232323;
+}
+
+.footer-signature {
+  margin-top: 1.4rem;
+  font-weight: 700;
+}
+
+.footer-list {
+  padding: 0;
+}
+
+.footer-list > li {
+  list-style: none;
+}
+
+.footer-list > li > a {
+  text-decoration: none;
+  color: gray;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.footer-list > li > a:hover, .footer-list > li > a:focus {
+  color: #ffffff;
 }
 
 @media (min-width: 576px) {
