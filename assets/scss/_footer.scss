@@ -1,0 +1,30 @@
+.footer {
+  padding-top: $gap * 3;
+  padding-bottom: 1.25rem;
+  color: $color-light;
+  background-color: $color-dark;
+
+  &-signature {
+    margin-top: 1.4rem;
+    font-weight: 700;
+  }
+  &-list {
+    padding: 0;
+    & > li {
+      list-style: none;
+
+      & > a {
+        text-decoration: none;
+        color: darken($color-light, 50%);
+        transition: color 0.2s linear;
+  
+        &:hover,
+        &:focus {
+          color: $color-light;
+        }
+      }
+    }
+
+    
+  }
+}
