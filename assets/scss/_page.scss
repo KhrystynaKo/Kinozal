@@ -1,4 +1,5 @@
 .film-video {
+
   &-title {
     &:after {
       width: calc(100% - 435px);
@@ -36,6 +37,33 @@
 
     @include xs {
       width: calc(100% - 200px);
+    }
+  }
+}
+
+.comments {
+  margin-bottom: $gap * 8;
+
+  &-title {
+    &:after {
+      width: calc(100% - 410px);
+  
+      @include xs {
+        width: calc(100% - 265px);
+      }
+    }
+  }
+
+  &-btn {
+    float: right;
+    color: $color-light;
+    border: none;
+    background-color: lighten($color-accent, 15%);
+    transition: background-color 0.2s linear;
+
+    &:hover,
+    &:focus {
+      background-color: $color-accent;
     }
   }
 }
