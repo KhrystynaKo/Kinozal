@@ -257,6 +257,10 @@ h2::after {
   color: #ffffff;
 }
 
+.film-video {
+  margin-bottom: 5rem;
+}
+
 .film-video-title:after {
   width: calc(100% - 435px);
 }
@@ -276,7 +280,11 @@ h2::after {
 }
 
 .film-description {
-  margin-bottom: 60px;
+  margin-bottom: 5rem;
+}
+
+.film-review {
+  margin-bottom: 5.6rem;
 }
 
 .film-title:after {
@@ -486,6 +494,12 @@ h2::after {
   }
 }
 
+@media (min-width: 1200px) {
+  .news-item:last-of-type {
+    margin-bottom: 4rem;
+  }
+}
+
 @media (max-width: 991.8px) {
   .panel {
     margin-bottom: 45px;
@@ -508,10 +522,9 @@ h2::after {
   .navbar-right {
     margin-top: 0;
   }
-  .new-films-item,
-  .top-week-item {
-    padding-right: 15px;
-    padding-left: 15px;
+  .films-section {
+    padding-right: 7.5px;
+    padding-left: 7.5px;
   }
 }
 

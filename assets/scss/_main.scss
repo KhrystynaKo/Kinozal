@@ -33,14 +33,15 @@
         color: $color-light;
       }
     }
-
-    @include sm {
-      padding-right: $gap;
-      padding-left: $gap;
-    }
   }
 }
-
+.films-section {
+  
+  @include sm {
+    padding-right: $gap / 2;
+    padding-left: $gap / 2;
+  }
+}
 .row {
   @include sm-min {
   margin-left: -$gap / 2;
@@ -58,6 +59,10 @@
 
   &:last-of-type {
     margin-bottom: 5.5rem;
+
+    @include lg-min {
+      margin-bottom: 4rem;
+    }
   }
 
   &__title {

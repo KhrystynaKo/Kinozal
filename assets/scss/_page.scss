@@ -1,5 +1,5 @@
 .film-video {
-
+  margin-bottom: 5rem;
   &-title {
     &:after {
       width: calc(100% - 435px);
@@ -28,9 +28,15 @@
 }
 
 .film-description {
-  margin-bottom: $gap * 4;
+  margin-bottom: 5rem;
 
 }
+
+
+.film-review {
+    margin-bottom: 5.6rem;
+}
+
 .film-title {
   &:after {
     width: calc(100% - 310px);
