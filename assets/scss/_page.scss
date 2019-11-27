@@ -1,6 +1,11 @@
 .film-video {
   margin-bottom: 5rem;
+
+  &-element {
+    border-radius: 5px 5px 0 0;
+  }
   &-title {
+
     &:after {
       width: calc(100% - 435px);
 
