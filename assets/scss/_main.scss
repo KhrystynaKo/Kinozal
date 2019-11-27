@@ -4,6 +4,10 @@
 
 .new-films, 
 .top-week {
+  & > .row {
+    margin-right: -$gap / 2;
+    margin-left: -$gap / 2;
+  }
   &-item {
     padding-right: $gap / 2;
     padding-left: $gap / 2;
@@ -33,19 +37,6 @@
         color: $color-light;
       }
     }
-  }
-}
-.films-section {
-  
-  @include sm {
-    padding-right: $gap / 2;
-    padding-left: $gap / 2;
-  }
-}
-.row {
-  @include sm-min {
-  margin-left: -$gap / 2;
-  margin-right: -$gap / 2;
   }
 }
 
