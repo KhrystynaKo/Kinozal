@@ -22,12 +22,25 @@
   }
 
   &-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     font-size: 1.2rem;
+    
+    @media (max-width: 467px) {
+      font-size: 0.9rem;
+      flex-wrap: nowrap;
+       
+    }
 
     & > span {
       font-size: 0.95rem;
       margin: 0 1.4rem 0 0.3rem;
+      @include xs {
+        margin: 0 0.4rem;
+      }
+      
     }
   }
 }
@@ -56,14 +69,20 @@
   margin-bottom: $gap * 8;
 
   &-title {
+      
     &:after {
       width: calc(100% - 410px);
   
       @include xs {
         width: calc(100% - 265px);
       }
+
+      @media (max-width: 417px) {
+        top: 53px;
+        width: calc(100% - 140px);
+      }
     }
-  }
+   }
 
   &-btn {
     float: right;
