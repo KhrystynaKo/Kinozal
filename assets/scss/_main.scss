@@ -54,10 +54,9 @@
     @include lg-min {
       margin-bottom: 4rem;
     }
-  }
+  
 
-  &__title {
-    @include xs {
+   @include xs {
       font-size: 1.25rem;
       }
     }

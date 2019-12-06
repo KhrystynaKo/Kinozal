@@ -7,6 +7,11 @@ body {
   font-size: 1rem;
 }
 
+section {
+  position: relative;
+  overflow: hidden;
+}
+
 a {
   color: $color-primary;
   transition: color 0.2s linear;
@@ -14,7 +19,6 @@ a {
   &:hover,
   &:focus {
     text-decoration: none;
-
     color: $color-accent;
   }
 }
@@ -22,35 +26,28 @@ a {
 h1 {
   margin:-0.5rem 0 2.8rem;
   font-size: 3rem;
-  position: relative;
   font-family: $font-header;
 
   &::after {
     position: absolute;
     content: "";
-    top: 40px;
-    right: -1px;
-    width: calc(100% - 365px);
-    height: 3px;
-    background-color: rgba($color-accent, 0.5%); 
+    padding-top: 0.85em;
+    margin-left: 1rem;
+    width: 100%;
+    border-bottom: 3px solid rgba($color-accent, 0.5%); 
   }
 
   @include md {
-    margin: 2.8rem 0 2.8rem;
+    margin: 1.7rem 0 2.8rem;
   }
 
   @include xs {
     font-size: 2rem;
-
-    &::after {
-      top: 30px;
-      width: calc(100% - 240px);
-    }
   }
 }
 
 h2 {
-  margin: 3.75rem 2.8rem 2.8rem;
+  margin: 3.75rem 0 2.8rem 2.8rem ;
   position: relative;
   font-family: $font-header;
   font-size: 2.5rem;
@@ -67,18 +64,20 @@ h2 {
   &::after {
     position: absolute;
     content: "";
-    top: 35px;
-    right: -45px;
-    width: calc(100% - 250px);
-    height: 3px;
-    background-color: rgba($color-accent, 0.5%); 
+    padding-top: 0.85em;
+    margin-left: 1rem;
+    width: 100%;
+    border-bottom: 3px solid rgba($color-accent, 0.5%); 
   }
+
   @include xs {
-    font-size: 1.7rem;
-      &::after {
-      top: 25px;
-      width: calc(100% - 155px);
-      }
+    font-size: 1.75rem;
+  }
+   
+  }
+  h3 {
+    @include xs {
+      font-size: 20px;
     }
   }
 

@@ -1,20 +1,14 @@
 .film-video {
-  margin-bottom: 5rem;
-
   &-element {
     border-radius: 5px 5px 0 0;
   }
-  &-title {
-
-    &:after {
-      width: calc(100% - 435px);
-
-      @include xs {
-        top: 30px;
-        width: calc(100% - 290px);
-        }
+  & > .well {
+    @media (max-width: 390px) {
+    padding: 19px 5px;
     }
-    
+    @media (max-width: 368px) {
+      padding: 19px 35px;
+    }
   }
 
   &-item {
@@ -30,59 +24,34 @@
     
     @media (max-width: 467px) {
       font-size: 0.9rem;
-      flex-wrap: nowrap;
-       
+      flex-wrap: nowrap;  
+    }
+
+    @media (max-width: 368px) {
+      font-size: 1.2rem;
+      flex-wrap: wrap;
     }
 
     & > span {
-      font-size: 0.95rem;
+      font-size: 0.95em;
       margin: 0 1.4rem 0 0.3rem;
       @include xs {
         margin: 0 0.4rem;
       }
-      
-    }
+      @media (max-width: 484px) {
+        font-size: 0.8em;
+      }
+    }  
   }
 }
-
-.film-description {
-  margin-bottom: 5rem;
-
-}
-
 
 .film-review {
-    margin-bottom: 5.6rem;
-}
-
-.film-title {
-  &:after {
-    width: calc(100% - 310px);
-
-    @include xs {
-      width: calc(100% - 200px);
-    }
-  }
+    margin-bottom: 2.2rem;
 }
 
 .comments {
-  margin-bottom: $gap * 8;
+  margin-bottom: $gap * 4;
 
-  &-title {
-      
-    &:after {
-      width: calc(100% - 410px);
-  
-      @include xs {
-        width: calc(100% - 265px);
-      }
-
-      @media (max-width: 417px) {
-        top: 53px;
-        width: calc(100% - 140px);
-      }
-    }
-   }
 
   &-btn {
     float: right;

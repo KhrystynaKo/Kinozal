@@ -74,6 +74,11 @@ body {
   font-size: 1rem;
 }
 
+section {
+  position: relative;
+  overflow: hidden;
+}
+
 a {
   color: #165690;
   -webkit-transition: color 0.2s linear;
@@ -89,22 +94,20 @@ a:hover, a:focus {
 h1 {
   margin: -0.5rem 0 2.8rem;
   font-size: 3rem;
-  position: relative;
   font-family: "PT Serif", serif;
 }
 
 h1::after {
   position: absolute;
   content: "";
-  top: 40px;
-  right: -1px;
-  width: calc(100% - 365px);
-  height: 3px;
-  background-color: rgba(223, 138, 19, 0.5);
+  padding-top: 0.85em;
+  margin-left: 1rem;
+  width: 100%;
+  border-bottom: 3px solid rgba(223, 138, 19, 0.5);
 }
 
 h2 {
-  margin: 3.75rem 2.8rem 2.8rem;
+  margin: 3.75rem 0 2.8rem 2.8rem;
   position: relative;
   font-family: "PT Serif", serif;
   font-size: 2.5rem;
@@ -123,11 +126,10 @@ h2::before {
 h2::after {
   position: absolute;
   content: "";
-  top: 35px;
-  right: -45px;
-  width: calc(100% - 250px);
-  height: 3px;
-  background-color: rgba(223, 138, 19, 0.5);
+  padding-top: 0.85em;
+  margin-left: 1rem;
+  width: 100%;
+  border-bottom: 3px solid rgba(223, 138, 19, 0.5);
 }
 
 .header {
@@ -263,16 +265,8 @@ h2::after {
   color: #ffffff;
 }
 
-.film-video {
-  margin-bottom: 5rem;
-}
-
 .film-video-element {
   border-radius: 5px 5px 0 0;
-}
-
-.film-video-title:after {
-  width: calc(100% - 435px);
 }
 
 .film-video-item {
@@ -294,28 +288,16 @@ h2::after {
 }
 
 .film-video-info > span {
-  font-size: 0.95rem;
+  font-size: 0.95em;
   margin: 0 1.4rem 0 0.3rem;
 }
 
-.film-description {
-  margin-bottom: 5rem;
-}
-
 .film-review {
-  margin-bottom: 5.6rem;
-}
-
-.film-title:after {
-  width: calc(100% - 310px);
+  margin-bottom: 2.2rem;
 }
 
 .comments {
-  margin-bottom: 120px;
-}
-
-.comments-title:after {
-  width: calc(100% - 410px);
+  margin-bottom: 60px;
 }
 
 .comments-btn {
@@ -513,11 +495,8 @@ h2::after {
 }
 
 @media (max-width: 991.8px) {
-  .panel {
-    margin-bottom: 45px;
-  }
   h1 {
-    margin: 2.8rem 0 2.8rem;
+    margin: 1.7rem 0 2.8rem;
   }
   .header {
     margin-bottom: 45px;
@@ -540,36 +519,27 @@ h2::after {
   h1 {
     font-size: 2rem;
   }
-  h1::after {
-    top: 30px;
-    width: calc(100% - 240px);
-  }
   h2 {
-    font-size: 1.7rem;
+    font-size: 1.75rem;
   }
-  h2::after {
-    top: 25px;
-    width: calc(100% - 155px);
+  h3 {
+    font-size: 20px;
   }
   .header-logo__title {
     letter-spacing: 0.2em;
     font-size: 2.5rem;
   }
-  .news-item__title {
+  .news-item:last-of-type {
     font-size: 1.25rem;
-  }
-  .film-video-title:after {
-    top: 30px;
-    width: calc(100% - 290px);
   }
   .film-video-info > span {
     margin: 0 0.4rem;
   }
-  .film-title:after {
-    width: calc(100% - 200px);
-  }
-  .comments-title:after {
-    width: calc(100% - 265px);
+}
+
+@media (max-width: 484px) {
+  .film-video-info > span {
+    font-size: 0.8em;
   }
 }
 
@@ -581,9 +551,19 @@ h2::after {
   }
 }
 
-@media (max-width: 417px) {
-  .comments-title:after {
-    top: 53px;
-    width: calc(100% - 140px);
+@media (max-width: 390px) {
+  .film-video > .well {
+    padding: 19px 5px;
+  }
+}
+
+@media (max-width: 368px) {
+  .film-video > .well {
+    padding: 19px 35px;
+  }
+  .film-video-info {
+    font-size: 1.2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }

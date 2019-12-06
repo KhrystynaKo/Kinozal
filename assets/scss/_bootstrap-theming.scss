@@ -87,10 +87,7 @@
     border-radius: 0 0 4px 4px;
   }
   
-  @include md {
-    margin-bottom: $gap * 3;
-  }
-
+ 
   &:last-of-type {
     margin: 0;
   }
