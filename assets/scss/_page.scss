@@ -2,48 +2,29 @@
   &-element {
     border-radius: 5px 5px 0 0;
   }
-  & > .well {
-    @media (max-width: 390px) {
-    padding: 19px 5px;
-    }
-    @media (max-width: 368px) {
-      padding: 19px 35px;
-    }
-  }
 
   &-item {
     border-radius: 10px;
   }
 
   &-info {
+    margin-left: 7px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0;
     font-size: 1.2rem;
     
-    @media (max-width: 467px) {
-      font-size: 0.9rem;
-      flex-wrap: nowrap;  
-    }
-
-    @media (max-width: 368px) {
-      font-size: 1.2rem;
-      flex-wrap: wrap;
-    }
-
-    & > span {
-      font-size: 0.95em;
-      margin: 0 1.4rem 0 0.3rem;
-      @include xs {
-        margin: 0 0.4rem;
-      }
-      @media (max-width: 484px) {
+    & > p {
+      margin: 0;
+      white-space: nowrap;
+      & > span {
         font-size: 0.8em;
-      }
-    }  
+        margin: 0 1.4rem 0 0.3rem;
+      }  
+    }
   }
-}
 
 .film-review {
     margin-bottom: 2.2rem;
@@ -51,7 +32,6 @@
 
 .comments {
   margin-bottom: $gap * 4;
-
 
   &-btn {
     float: right;
@@ -63,6 +43,7 @@
     &:hover,
     &:focus {
       background-color: $color-accent;
+      }
     }
   }
 }
