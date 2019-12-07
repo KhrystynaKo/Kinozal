@@ -8,23 +8,28 @@
   }
 
   &-info {
-    margin-left: 7px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     margin: 0;
     font-size: 1.2rem;
-    
+
     & > p {
       margin: 0;
       white-space: nowrap;
+
       & > span {
         font-size: 0.8em;
         margin: 0 1.4rem 0 0.3rem;
-      }  
-    }
+      }
+    }  
   }
+}
+
+.badge-last {
+  margin-right: 0;
+}
 
 .film-review {
     margin-bottom: 2.2rem;
@@ -46,4 +51,3 @@
       }
     }
   }
-}

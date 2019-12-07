@@ -274,7 +274,6 @@ h2::after {
 }
 
 .film-video-info {
-  margin-left: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,15 +299,19 @@ h2::after {
   margin: 0 1.4rem 0 0.3rem;
 }
 
-.film-video .film-review {
+.badge-last {
+  margin-right: 0 !important;
+}
+
+.film-review {
   margin-bottom: 2.2rem;
 }
 
-.film-video .comments {
+.comments {
   margin-bottom: 60px;
 }
 
-.film-video .comments-btn {
+.comments-btn {
   float: right;
   color: #ffffff;
   border: none;
@@ -318,7 +321,7 @@ h2::after {
   transition: background-color 0.2s linear;
 }
 
-.film-video .comments-btn:hover, .film-video .comments-btn:focus {
+.comments-btn:hover, .comments-btn:focus {
   background-color: #df8a13;
 }
 
